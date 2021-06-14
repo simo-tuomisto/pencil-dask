@@ -34,8 +34,6 @@ class PencilCodeLauncher:
         else:
             with open(self._state_file, 'r') as state_file:
                 self.state = yaml_load(state_file, Loader=Loader)
-
-
             
     def update_state(self) -> None:
         with open(self._state_file, 'w') as state_file:
@@ -89,6 +87,10 @@ class PencilCodeLauncher:
     
     def has_run(self) -> bool:
         return self.state['run']
+    
+    def write_file(self, file: str, contents: str) -> None:
+        with open(os.path.join(self._simulation_dir, file), 'w') as f:
+            f.write(contents)
     
     def __str__(self) -> str:
         return 'Current state:\n{0}'.format(str(self.state))    

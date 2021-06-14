@@ -23,6 +23,7 @@ dependencies:
   - numpy
   - openmpi
   - pandas
+  - pip
   - plotly
   - plotly-orca
   - psutil
@@ -31,3 +32,6 @@ dependencies:
   - requests
   - scikit-learn
   - sh
+  - pip:
+    - f90nml
+    - sacred
