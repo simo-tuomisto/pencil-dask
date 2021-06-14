@@ -1,0 +1,33 @@
+name: pencil-dask
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - dask
+  - dill
+  - conda-forge::c-compiler
+  - conda-forge::compilers
+  - conda-forge::cxx-compiler
+  - conda-forge::fortran-compiler
+  - conda-forge::gcc_linux-64
+  - conda-forge::gfortran_linux-64
+  - graphviz
+  - h5py=*=mpi_openmpi*
+  - hdf5-static=*=mpi_openmpi*
+  - hdf5=*=mpi_openmpi*
+  - jupyterlab
+  - libblas=*=*mkl*
+  - libcblas=*=*mkl*
+  - mamba
+  - matplotlib
+  - numpy
+  - openmpi
+  - pandas
+  - plotly
+  - plotly-orca
+  - psutil
+  - python=3.9.*
+  - python-graphviz
+  - requests
+  - scikit-learn
+  - sh
