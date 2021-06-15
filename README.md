@@ -67,3 +67,4 @@ Pencil code needs to be enabled before running the example
    ```sh
    jupyter-lab
    ```
+3. Open `launcher-test.ipynb` and execute cells one at a time.
